@@ -18,6 +18,9 @@ This repository containes files that explained Coroutines Library in Kotlin as a
 ## Version
 Kotlin Coroutines: **1.3**
 
+## Preview
+![Kotlin Coroutines](../master/files/mindmapsourcefile.mindnode/QuickLook/Preview.jpg "Kotlin Coroutines")
+
 ## Subjects
 1. Origin of Coroutine.
 2. Where Coroutines Lives.

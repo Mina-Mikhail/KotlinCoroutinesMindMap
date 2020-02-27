@@ -35,6 +35,12 @@ Kotlin Coroutines: **1.3**
 
 
 
+## 1. Origin of Coroutine
+A Coroutine is another part from Routines, while the other part was subroutine. First appears in 1963 in paper titled "Design of a Separable Transition-Diagram Compiler" by Melvin Conway, and content an explanation for it as follows:
+
+`The coroutine approach to the same problem accomplishes the switching job implicitly by use of the subroutine calling sequence. When Coroutines A and B are connected so that A sends items to B, B runs for a while until it encounters a read command, which means it needs something from A. Then control is transferred to A until it wants to "write," whereupon control is returned to B at the point where it left off.`
+
+![Origin of Coroutine](../master/files/originofcoroutine.png "Origin of Coroutine")
 
 
 

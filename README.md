@@ -46,8 +46,32 @@ First step to create a coroutine is by specifies the scope that it binds to it. 
 ![Coroutine Creation](../master/files/coroutinescreation.png "Coroutine Creation")
 
 
+## 4. Coroutine Context
+Each Coroutine created has a Context. A Coroutine Context is a map! Similar to data structure maps, but build specific for Coroutines. It has **keys** represented as `Elements` and `values` which are the value that coroutine has. And functions to operate on it.
+
+![Coroutine Context](../master/files/coroutineContext.png "Coroutine Context")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### References
+
 
 
 #### About Me

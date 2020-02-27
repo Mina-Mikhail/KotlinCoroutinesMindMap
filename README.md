@@ -17,12 +17,13 @@ This preview is automatically generated for the mindmap source file.
 2. Where Coroutines Lives.
 3. Coroutine Creation.
 4. Coroutine Context.
-5. Scopes.
-6. Builders.
-7. Dispatchers.
-8. Suspended Functions.
-9. Channels.
-10. Flow.
+5. Job.
+6. Scopes.
+7. Builders.
+8. Dispatchers.
+9. Suspended Functions.
+10. Channels.
+11. Flow.
 
 
 
@@ -47,14 +48,16 @@ First step to create a coroutine is by specifies the scope that it binds to it. 
 
 
 ## 4. Coroutine Context
-Each Coroutine created has a Context. A Coroutine Context is a map! Similar to data structure maps, but build specific for Coroutines. It has **keys** represented as `Elements` and `values` which are the value that coroutine has. And functions to operate on it.
+Each Coroutine created has a Context. A Coroutine Context is a map! Similar to data structure maps, but build specific for Coroutines. It has **keys** represented as `Elements` and **values** which are the value that coroutine has. And **functions** to operate on it.
 
 ![Coroutine Context](../master/files/coroutineContext.png "Coroutine Context")
 
 
+## 5. Job
+A Job is **life-cycle** with state of: New, Active, Completing, Cancelling, Cancelled, Completed. And a hierarchy of **Parent and Child**. It can be canceled effecting his children/parent, unless it is a SupervisorJob. It cannot returned a result value, unless it is a Deferred.
 
 
-
+![Coroutine Job](../master/files/coroutineJob.png "Coroutine Job")
 
 
 

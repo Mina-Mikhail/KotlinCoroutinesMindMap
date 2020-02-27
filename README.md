@@ -2,23 +2,14 @@
 A Mindmap abstracting Kotlin Coroutines.
 
 ## Overview
-Coroutines implemented in Kotlin language as a first-party library. For writing asynchronous code (non-blocking), also it provides other ways to achieve  concurrency.
-
-
-# Download
-This repository containes files that explained Coroutines Library in Kotlin as a mind-mapping:
-
-**Source File (MindNode for Mac App):**
-> https://github.com/
-
-**PDF:**
-> https://github.com/
-
+This repository contains files that explains Coroutines Library in Kotlin as a mind-mapping using MindNode App for Mac. Coroutines implemented in Kotlin language as a first-party library for writing asynchronous code (non-blocking), also it provides other ways to achieve  concurrency.
 
 ## Version
 Kotlin Coroutines: **1.3**
 
 ## Preview
+This preview is automatically generated for the mindmap source file.
+
 ![Kotlin Coroutines](../master/files/mindmapsourcefile.mindnode/QuickLook/Preview.jpg "Kotlin Coroutines")
 
 ## Subjects
@@ -38,10 +29,15 @@ Kotlin Coroutines: **1.3**
 ## 1. Origin of Coroutine
 A Coroutine is another part from Routines, while the other part was subroutine. First appears in 1963 in paper titled "Design of a Separable Transition-Diagram Compiler" by Melvin Conway, and content an explanation for it as follows:
 
-`The coroutine approach to the same problem accomplishes the switching job implicitly by use of the subroutine calling sequence. When Coroutines A and B are connected so that A sends items to B, B runs for a while until it encounters a read command, which means it needs something from A. Then control is transferred to A until it wants to "write," whereupon control is returned to B at the point where it left off.`
+> The coroutine approach to the same problem accomplishes the switching job implicitly by use of the subroutine calling sequence. When Coroutines A and B are connected so that A sends items to B, B runs for a while until it encounters a read command, which means it needs something from A. Then control is transferred to A until it wants to "write," whereupon control is returned to B at the point where it left off.
 
 ![Origin of Coroutine](../master/files/originofcoroutine.png "Origin of Coroutine")
 
+
+## 2. Where Coroutines Lives
+Whenever we create a coroutine it lives inside a threads.
+
+![Coroutines Lives](../master/files/coroutinelives.png "Coroutines Lives")
 
 
 #### References

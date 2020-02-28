@@ -60,10 +60,10 @@ A Job is **life-cycle** with state of: New, Active, Completing, Cancelling, Canc
 ![Coroutine Job](../master/files/coroutineJob.png "Coroutine Job")
 
 
+## 6. Scopes
+A way to limit where coroutines created. It can track coroutines and cancel them *(Similarity shown here to `CoroutineContext` and `Job`! That's because `Scope` encapsulates/uses them)*.
 
-
-
-
+![Coroutine Scopes](../master/files/Scope.png "Coroutine Scopes")
 
 
 

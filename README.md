@@ -78,8 +78,10 @@ A way to determine where we want to place our coroutine.
 ![Coroutine Dispatchers](../master/files/Dispatchers.png "Coroutine Dispatchers")
 
 
+## 9. Suspended Functions
+Another way to create a coroutine! With just a modifier `suspend` before the function we can have a coroutine as function. With `launch` builder execution is **Sequentially**, and with `async` execution become **Concurrently**.
 
-
+![Suspended Functions](../master/files/SuspendFunction.png "Suspended Functions")
 
 
 #### References

@@ -72,6 +72,15 @@ Builders are functions that create the coroutines. Some builder need scopes some
 ![Coroutine Builders](../master/files/Builders.png "Coroutine Builders")
 
 
+## 8. Dispatchers
+A way to determine where we want to place our coroutine.
+
+![Coroutine Dispatchers](../master/files/Dispatchers.png "Coroutine Dispatchers")
+
+
+
+
+
 
 #### References
 

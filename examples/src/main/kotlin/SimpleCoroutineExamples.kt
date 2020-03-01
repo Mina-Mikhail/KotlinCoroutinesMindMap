@@ -14,4 +14,11 @@ fun main() {
     }
     // runBlocking { myJob.join() }
 
+
+
+    // Coroutine that return a result
+    val result: Deferred<Int> = GlobalScope.async {
+        return@async 3
+    }
+    runBlocking { println("Result: ${result.await()}") }
 }

@@ -1,6 +1,4 @@
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 fun main() {
 
@@ -8,10 +6,12 @@ fun main() {
     GlobalScope.launch(Dispatchers.Default) {
         println("Hi")
     }
+    // Thread.sleep(100)
 
-
-    
-
-
+    // Coroutine and Job Example
+    val myJob: Job = GlobalScope.launch(Dispatchers.Default) {
+        println("Hi from Coroutine 2")
+    }
+    // runBlocking { myJob.join() }
 
 }

@@ -1,4 +1,5 @@
 import kotlinx.coroutines.*
+import kotlin.system.measureTimeMillis
 
 fun main() {
 
@@ -23,4 +24,21 @@ fun main() {
     val myDeferred: Deferred<Int> = GlobalScope.async { return@async 1 }
 
 
+    val totalTime: Long = measureTimeMillis {
+        runBlocking {
+            val turtleTime: Deferred<Long> = async { functionA() }
+            val rabbitTime: Deferred<Long> = async { functionB() }
+            println("functionA: ${turtleTime.await()} functionB: ${rabbitTime.await()}")
+        }
+    }
+    println("Total Time $totalTime")
+
+}
+
+suspend fun functionA(): Long = measureTimeMillis {
+    delay(4000)
+}
+
+suspend fun functionB(): Long = measureTimeMillis {
+    delay(4000)
 }

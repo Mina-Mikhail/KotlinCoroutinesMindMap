@@ -23,7 +23,7 @@ fun main() {
     // async Builder
     val myDeferred: Deferred<Int> = GlobalScope.async { return@async 1 }
 
-
+    // Or
     val totalTime: Long = measureTimeMillis {
         runBlocking {
             val turtleTime: Deferred<Long> = async { functionA() }
@@ -33,7 +33,21 @@ fun main() {
     }
     println("Total Time $totalTime")
 
+
+    // withContext
+    runBlocking {
+        println("1 ${Thread.currentThread().name}") // 1 main
+        val result: String = withContext(Dispatchers.IO) {
+            println("2 ${Thread.currentThread().name}") // 2 DefaultDispatcher-worker-3
+            "Mohammad"
+        }
+
+        println(result)
+        println("3 ${Thread.currentThread().name}") // 3 main
+    }
+
 }
+
 
 suspend fun functionA(): Long = measureTimeMillis {
     delay(4000)
@@ -42,3 +56,4 @@ suspend fun functionA(): Long = measureTimeMillis {
 suspend fun functionB(): Long = measureTimeMillis {
     delay(4000)
 }
+

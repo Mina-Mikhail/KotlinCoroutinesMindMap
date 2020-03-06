@@ -9,6 +9,7 @@ private val myScope: CoroutineScope = CoroutineScope(myContext)
 
 fun main() {
 
+    SupervisorJob()
     myJob = myScope.launch {
         println("Hello World")
     }

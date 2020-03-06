@@ -26,9 +26,9 @@ fun main() {
     // Or
     val totalTime: Long = measureTimeMillis {
         runBlocking {
-            val turtleTime: Deferred<Long> = async { functionA() }
-            val rabbitTime: Deferred<Long> = async { functionB() }
-            println("functionA: ${turtleTime.await()} functionB: ${rabbitTime.await()}")
+            val functionATime: Deferred<Long> = async { functionA() }
+            val functionBTime: Deferred<Long> = async { functionB() }
+            println("functionA: ${functionATime.await()} functionB: ${functionBTime.await()}")
         }
     }
     println("Total Time $totalTime")

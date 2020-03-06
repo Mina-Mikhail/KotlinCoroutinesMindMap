@@ -18,4 +18,9 @@ fun main() {
         println("Hi from Coroutine 2")
     }
 
+
+    // async Builder
+    val myDeferred: Deferred<Int> = GlobalScope.async { return@async 1 }
+
+
 }

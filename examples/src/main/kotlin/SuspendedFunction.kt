@@ -1,6 +1,4 @@
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 fun main() {
     GlobalScope.launch {
@@ -11,3 +9,10 @@ fun main() {
 suspend fun foo() {
 
 }
+
+suspend fun searchNewsAPI(query: String) {
+    withContext(Dispatchers.IO) {
+        // Background Thread.
+    }
+}
+

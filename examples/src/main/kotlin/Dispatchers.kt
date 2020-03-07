@@ -9,5 +9,10 @@ fun main() {
 
     // IO Dispatcher
     GlobalScope.launch(Dispatchers.IO) {  }
+
+    // Unconfined Dispatcher
+    GlobalScope.launch(Dispatchers.Unconfined) {  }
+
+
 }
 

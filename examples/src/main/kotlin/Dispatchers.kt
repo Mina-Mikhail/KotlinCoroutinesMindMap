@@ -13,6 +13,7 @@ fun main() {
     // Unconfined Dispatcher
     GlobalScope.launch(Dispatchers.Unconfined) {  }
 
-
+    // Main Dispatcher
+    GlobalScope.launch(Dispatchers.Main) {  }
 }
 

@@ -6,6 +6,8 @@ fun main() {
 
     // Default Dispatcher
     GlobalScope.launch(Dispatchers.Default) {  }
-    
+
+    // IO Dispatcher
+    GlobalScope.launch(Dispatchers.IO) {  }
 }
 

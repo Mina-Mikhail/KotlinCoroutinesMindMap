@@ -2,6 +2,15 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+
+// Channels Type
+
+val rendezvousChannel: Channel<Int> = Channel<Int>(Channel.RENDEZVOUS)
+val conflatedChannel: Channel<Int> = Channel<Int>(Channel.CONFLATED)
+val bufferedChannel: Channel<Int> = Channel<Int>(Channel.BUFFERED)
+val unlimitedChannel: Channel<Int> = Channel<Int>(Channel.UNLIMITED)
+
+
 // Main() become a Coroutine with runBlocking
 fun main(): Unit = runBlocking {
 
